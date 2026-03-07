@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* ---- NAVBAR ---- */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 14px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: #f4f4f4;
+    letter-spacing: 3px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 10px;
+}
+
+.navItem {
+    position: relative;
+}
+
+.navItem a {
+    display: block;
+    padding: 8px 14px;
+    color: #ccc;
+    font-size: 0.95rem;
+    border-radius: 4px;
+}
+
+.navItem a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Dropdown */
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 4px;
+    min-width: 140px;
+    z-index: 100;
+}
+
+.navItem:hover .dropdown {
+    display: block;
+}
+
+.dropItem a {
+    padding: 10px 14px;
+    color: #ccc;
+    font-size: 0.9rem;
+    border-radius: 0;
+}
+
+.dropItem a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Hamburger */
+
+.menu {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Mobile menu */
+
+.mobileMenu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+}
+
+.mobileMenu.open {
+    display: flex;
+}
+
+.mobileItem a {
+    padding: 12px 20px;
+    color: #ccc;
+    border-bottom: 1px solid #444;
+    font-size: 0.95rem;
+}
+
+.mobileItem a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+/* ---- MAIN ---- */
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    gap: 40px;
+    min-height: calc(100vh - 60px);
+}
+
+.joinUs {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    line-height: 1.1;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    max-width: 440px;
+    margin-bottom: 28px;
+}
+
+/* Join Us button */
+
+.main > div:first-child .button input {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main > div:first-child .button input:hover {
+    background-color: #444;
+}
+
+/* ---- FORM ---- */
+
+.main2 {
+    flex-shrink: 0;
+}
+
+.form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 36px 32px;
+    width: 320px;
+}
+
+.head {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+}
+
+.name,
+.email {
+    margin-bottom: 14px;
+}
+
+.name input,
+.email input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+}
+
+.name input:focus,
+.email input:focus {
+    border-color: #222;
+}
+
+.form .button {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.signButton input,
+.loginButton input {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    border: 1px solid #222;
+}
+
+.signButton input {
+    background-color: #222;
+    color: #fff;
+}
+
+.signButton input:hover {
+    background-color: #444;
+}
+
+.loginButton input {
+    background-color: #fff;
+    color: #222;
+}
+
+.loginButton input:hover {
+    background-color: #f0f0f0;
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 40px 24px;
+        text-align: center;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .joinUs {
+        font-size: 2.8rem;
+    }
+}

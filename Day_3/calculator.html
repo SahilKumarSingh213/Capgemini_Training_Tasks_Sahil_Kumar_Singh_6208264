@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>calculator</title>
+
+  <style>
+    button {
+      width: 28px;
+      height: 28px;
+      margin: 2px;
+    }
+
+    button:hover {
+      background-color: lightgray;
+    }
+
+    #display {
+      width: 130px;
+      margin-bottom: 5px;
+    }
+  </style>
+
+</head>
+<body>
+
+<div style="background-color:aquamarine; width:140px; padding: 5px;">
+
+<h3>Calculator</h3>
+
+<input id="display" type="text">
+
+<br>
+
+<button onclick="add('1')">1</button>
+<button onclick="add('2')">2</button>
+<button onclick="add('3')">3</button>
+<button onclick="add('4')">4</button>
+
+<br>
+
+<button onclick="add('5')">5</button>
+<button onclick="add('6')">6</button>
+<button onclick="add('7')">7</button>
+<button onclick="add('8')">8</button>
+
+<br>
+
+<button onclick="add('9')">9</button>
+<button onclick="add('0')">0</button>
+<button onclick="clearText()">C</button>
+<button onclick="answer()">=</button>
+
+<br>
+
+<button onclick="add('+')">+</button>
+<button onclick="add('-')">-</button>
+<button onclick="add('*')">x</button>
+<button onclick="add('/')">/</button>
+
+</div>
+
+<script>
+
+let screen = document.getElementById("display")
+
+function add(val)
+{
+  screen.value = screen.value + val
+}
+
+function clearText()
+{
+  screen.value = ""
+}
+
+function answer()
+{
+  screen.value = eval(screen.value)
+}
+
+</script>
+
+</body>
+</html>

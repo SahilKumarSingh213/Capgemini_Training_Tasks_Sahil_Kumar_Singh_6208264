@@ -1,0 +1,40 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTfv9EOQYNexoc3uTi_jiZn4K9g0yj4rPWA&s");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+}
+
+h3{
+    background: linear-gradient(to right,skyblue,green);
+}
+
+*box1{
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    background-color: chocolate;
+    font-size: 22px;
+}
+
+*box2{
+    border: 2px solid blue;
+    width: 250px;
+    height: 250px;
+    background-color: cyan;
+    font-size: 22px;
+}
+
+div{
+    height: 50px;
+    width: 50px;
+    background-color: tomato;
+    border:2px solid black;
+    float: left;
+}
+
+p{
+    clear
+}

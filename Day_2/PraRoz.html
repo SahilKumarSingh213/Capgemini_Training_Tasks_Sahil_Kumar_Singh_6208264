@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PraRoz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./PraRozCss.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">PRAROZ</div>
+    <div class="navLinks">
+        <div class="navItem"><a href="#">Home</a></div>
+        <div class="navItem">
+            <a href="#" class="dropToggle">About &#9662;</a>
+            <div class="dropdown">
+                <div class="dropItem"><a href="#">Our Story</a></div>
+                <div class="dropItem"><a href="#">Team</a></div>
+                <div class="dropItem"><a href="#">Careers</a></div>
+            </div>
+        </div>
+        <div class="navItem"><a href="./PraRozContact.html">Contact</a></div>
+    </div>
+    <div class="menu" id="menuBtn" onclick="toggleMobileMenu()">&#9776;</div>
+</div>
+
+<div class="mobileMenu" id="mobileMenu">
+    <div class="mobileItem"><a href="#">Home</a></div>
+    <div class="mobileItem"><a href="#">About</a></div>
+    <div class="mobileItem"><a href="#">Our Story</a></div>
+    <div class="mobileItem"><a href="#">Team</a></div>
+    <div class="mobileItem"><a href="#">Careers</a></div>
+    <div class="mobileItem"><a href="#">Contact</a></div>
+</div>
+
+<script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('open');
+    }
+</script>
+
+<div class="main">
+    <div>
+        <div class="joinUs">Web Development<br>Course</div>
+
+        <div class="description">
+            Launch your career in tech with our hands-on Web Development Course.
+            Learn HTML, CSS, JavaScript, and modern frameworks — guided by real
+            developers, built for real results.
+        </div>
+
+        <div class="button">
+            <input type="button" value="Join Us">
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="form">
+            <div class="head">SignUp / Login</div>
+            <div class="name"><input type="text" placeholder="Name"></div>
+            <div class="email"><input type="text" placeholder="Email"></div>
+            <div class="button">
+                <div class="signButton"><input type="button" value="Sign Up"></div>
+                <div class="loginButton"><input type="button" value="Log In"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!--!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Practice</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<u>Lorem ipsum</u><br>
+<em>Lorem ipsum</em><br>
+<ins>Inserted text</ins><br>
+<i>Italic text</i><br>
+
+<h1>Hello</h1>
+<h2>Hello</h2>
+
+<q>Quotes</q><br>
+<mark>Highlighted text</mark><br>
+
+h<sub>2</sub>o<br>
+2<sup>2</sup><br>
+
+<div style="border:5px solid; width:200px;">Box</div>
+
+<!-- Lists -->
+<!--ol start="10">
+  <li>Java</li>
+  <li>Python</li>
+  <li>C++</li>
+</ol>
+
+<ul type="circle">
+  <li>Java</li>
+  <li>Python</li>
+  <li>C++</li>
+</ul>
+
+<dl>
+  <dt>Programming</dt>
+  <dd>Java, Python, C++</dd>
+</dl>
+
+<table>
+  <tr>
+    <th colspan="2">Java</th>
+    <th rowspan="2">Python</th>
+  </tr>
+  <tr>
+    <td>Robust</td>
+    <td>Dynamic</td>
+  </tr>
+</table>
+
+<h2>Class Timetable</h2>
+
+<table border="1" cellpadding="8">
+
+  <tr>
+    <th></th>
+    <th colspan="3">Seminar</th>
+  </tr>
+
+  <tr>
+    <th>Day</th>
+    <th colspan="2">Schedule</th>
+    <th>Topic</th>
+  </tr>
+
+  <tr>
+    <th></th>
+    <th>Begin</th>
+    <th>End</th>
+    <th></th>
+  </tr>
+
+  <!-- MONDAY -->
+  <!--tr>
+    <td rowspan="7">Monday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+  <!-- TUESDAY -->
+  <!--tr>
+    <td rowspan="7">Tuesday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+  <!-- WEDNESDAY -->
+  <tr>
+    <!--td rowspan="7">Wednesday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+  <!-- THURSDAY -->
+  <!--tr>
+    <td rowspan="7">Thursday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+  <!-- FRIDAY -->
+  <!--tr>
+    <td rowspan="7">Friday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+  <!-- SATURDAY -->
+  <!--tr>
+    <td rowspan="7">Saturday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+</table>
+
+<!-- anchor tag -->
+ <!--a href="www.google.com">google</a>
+ <a href="https://www.google.com"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="html"> </a>
+ <a href="https://www.google.com" target="_blank"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="html"> </a>
+<fieldset>
+    <legend> form </legend>
+<form action="">
+<label for="password"></label>
+<input type="password" id="pass">
+<label for="address"></label>
+<textarea></textarea>
+<button type="submit"></button>
+<select name="" id="">
+    <option>
+        <option value="">value 1</option>
+        <option value="">value 2</option>
+    </option>
+</select>
+</form>
+</fieldset>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Practice</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+//<!-- TEXT FORMATTING -->
+<u>Lorem ipsum</u><br>
+<em>Lorem ipsum</em><br>
+<ins>Inserted text</ins><br>
+<i>Italic text</i><br>
+
+<h1>Hello</h1>
+<h2>Hello</h2>
+
+<q>Quotes</q><br>
+<mark>Highlighted text</mark><br>
+
+h<sub>2</sub>o<br>
+2<sup>2</sup><br>
+
+<div style="border:5px solid; width:200px;">Box</div>
+
+<hr>
+
+<ol start="10">
+  <li>Java</li>
+  <li>Python</li>
+  <li>C++</li>
+</ol>
+
+<ul type="circle">
+  <li>Java</li>
+  <li>Python</li>
+  <li>C++</li>
+</ul>
+
+<dl>
+  <dt>Programming</dt>
+  <dd>Java, Python, C++</dd>
+</dl>
+
+<hr>
+
+<table>
+  <tr>
+    <th colspan="2">Java</th>
+    <th rowspan="2">Python</th>
+  </tr>
+  <tr>
+    <td>Robust</td>
+    <td>Dynamic</td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>Class Timetable</h2>
+
+<table border="1" cellpadding="8">
+
+  <tr>
+    <th></th>
+    <th colspan="3">Seminar</th>
+  </tr>
+
+  <tr>
+    <th>Day</th>
+    <th colspan="2">Schedule</th>
+    <th>Topic</th>
+  </tr>
+
+  <tr>
+    <th></th>
+    <th>Begin</th>
+    <th>End</th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <td rowspan="7">Monday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+
+  <tr>
+    <td rowspan="7">Tuesday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+
+  <tr>
+    <td rowspan="7">Wednesday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+
+  <tr>
+    <td rowspan="7">Thursday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+  <tr>
+    <td rowspan="7">Friday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+  <tr>
+    <td rowspan="7">Saturday</td>
+    <td>10:00 a.m.</td>
+    <td>11:30 a.m.</td>
+    <td>Class</td>
+  </tr>
+  <tr><td>11:30 a.m.</td><td>12:00 p.m.</td><td>Break</td></tr>
+  <tr><td>12:00 p.m.</td><td>1:00 p.m.</td><td>Class</td></tr>
+  <tr><td>1:00 p.m.</td><td>2:00 p.m.</td><td>Break</td></tr>
+  <tr><td>2:00 p.m.</td><td>3:30 p.m.</td><td>Class</td></tr>
+  <tr><td>3:30 p.m.</td><td>4:00 p.m.</td><td>Break</td></tr>
+  <tr><td>4:00 p.m.</td><td>5:00 p.m.</td><td>Class</td></tr>
+
+</table>
+
+<hr>
+
+<a href="">google</a><br>
+
+<a href="https://www.google.com">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="html">
+</a><br>
+
+<a href="https://www.google.com" target="_blank">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="html">
+</a>
+
+<hr>
+
+<!-- FORM -->
+<fieldset>
+  <legend>Form</legend>
+
+  <form>
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass"><br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address"></textarea><br><br>
+
+    <select>
+      <option value="">Value 1</option>
+      <option value="">Value 2</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</fieldset>
+
+<fieldset>
+  <legend>Form</legend>
+
+  <form>
+
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="color:red">User Application Form</h3>
+      <button type="submit">Submit</button>
+    </div>
+
+    <br>
+
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname"><br><br>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname"><br><br>
+<div>
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+</div>
+    <label for="address">Address:</label><br>
+    <textarea id="address"></textarea><br><br>
+
+  </form>
+</fieldset>
+
+<form style="width: 400px; border: 2px solid black; padding: 10px; border-radius: 5px;">
+        <label for="fname"><i>First name:</i></label>
+        <input type="text" id="fname" name="fname" value="""><br><br>
+            <label for="lname"><i>Last name:</i></label>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <label for="sport"><i>Favorite sport:</i></label>
+            <input type="text" id="sport" name="sport" value=""><br><br>
+            <label><i>Gender:</i></label>
+            <input type="radio" id="male" name="gender" value="">
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="">
+            <label for="female">female</label>
+            <input type="radio" id="notsure" name="gender" value="">
+            <label for="notsure">not sure</label><br><br>
+            <label for="state"><i>State resident:</i></label>
+            <select id="state" name="state">
+                <option value="Jaipur">Jaipur</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Alwar">Alwar</option>
+            </select><br><br>
+            <input type="checkbox" id="age21" name="age21">
+            <label for="age21">21 or older</label><br><br>
+            <label><i>Car models owned:</i></label>
+            <input type="checkbox" id="ford" name="car" value="Ford">
+            <label for="ford">Ford</label>
+            <input type="checkbox" id="chrysler" name="car" value="Chrysler">
+            <label for="chrysler">Chrysler</label>
+            <input type="checkbox" id="toyota" name="car" value="Toyota">
+            <label for="toyota">Toyota</label>
+            <input type="checkbox" id="nissan" name="car" value="Nissan">
+            <label for="nissan">Nissan</label><br><br>
+            <button type="submit">Save Changes</button>
+    </form><br>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Table Layout</title>
+</head>
+<body>
+
+<table border="1">
+  <tr>
+    <td rowspan="2"></td>
+    <td colspan="1"></td>
+  </tr>
+
+
+
+
+</table>
+
+</body>
+</html>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+

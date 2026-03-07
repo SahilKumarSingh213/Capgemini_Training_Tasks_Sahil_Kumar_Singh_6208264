@@ -1,0 +1,52 @@
+/*p{
+  color: aquamarine;
+}
+#zxc{
+    color: beige;
+}
+.asd{
+    text-decoration: double;
+}
+ simple and combination selectors
+ /* decandent selector
+ child selector
+ general sibling selector
+ adjacent sibling selector
+ pseudo element selector --> ::-----> scope resolution
+ p::first-line{}
+ p::after{}
+ ul li::marker{}
+ p::selection{}
+
+
+
+
+
+ pseudo class selector:-
+ dynamic pseudo selector
+ structural pseudo selector
+
+ p:hover{}
+ a is link for google(example)
+ a:active{
+ color
+ }
+ a:visited{
+ color 
+ }
+
+
+ */
+/*body div div body{
+    color: blueviolet;
+}
+body>div{
+    background-color: brown;
+}
+body div div h1{}
+
+body>#div1{}
+
+h1~h1{
+
+}*/
