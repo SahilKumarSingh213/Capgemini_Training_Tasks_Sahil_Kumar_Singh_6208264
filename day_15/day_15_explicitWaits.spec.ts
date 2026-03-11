@@ -20,6 +20,7 @@
 //     await page.goto("https://www.flipkart.com/")
 //     await page.getByPlaceholder("Search for Products, Brands and More").first().fill("shoes")
 //     await page.keyboard.press("Enter")
+//     
 //     let [page2]=await Promise.all([page.waitForNavigation(),page.locator('//img[@class="MZekss"]').first().click()])
 
 //     console.log(await page.url());
