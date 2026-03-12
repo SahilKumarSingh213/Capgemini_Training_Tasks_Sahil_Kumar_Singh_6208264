@@ -1,7 +1,7 @@
-import { test } from "@playwright/test";
-test("multiple tabs",async({browser})=>{
-    let context = await browser.newContext()
-    let page = await context.newPage()
+// import { test } from "@playwright/test";
+// test("multiple tabs",async({browser})=>{
+//     let context = await browser.newContext()
+//     let page = await context.newPage()
     // // await page.goto("https://www.lenskart.com")
     // // let page2 = await context.newPage()
     // // await page2.goto("https://www.flipkart.com/")
@@ -26,12 +26,12 @@ test("multiple tabs",async({browser})=>{
     // await page2.getByRole("button",{name:"Add to Cart"}).click()
     // await page2.waitForTimeout(3000)
 
-    await page.goto("https://demoapps.qspiders.com/ui/download?sublist=0")
-    await page.getByPlaceholder("Enter text here").fill("sahil")
-    await Promise.all([
-    page.waitForEvent('download'),
-    await page.locator('//button[@id="downloadButton"]').click()])
-    await page.waitForTimeout(3000)
+    // await page.goto("https://demoapps.qspiders.com/ui/download?sublist=0")
+    // await page.getByPlaceholder("Enter text here").fill("sahil")
+    // await Promise.all([
+    // page.waitForEvent('download'),
+    // await page.locator('//button[@id="downloadButton"]').click()])
+    // await page.waitForTimeout(3000)
 
 }
 )
