@@ -1,5 +1,5 @@
 // import { test } from "@playwright/test";
-// test("multiple tabs",async({browser})=>{
+// test("multiple tabs",async ({browser})=>{
 //     let context = await browser.newContext()
 //     let page = await context.newPage()
     // // await page.goto("https://www.lenskart.com")
@@ -26,12 +26,23 @@
     // await page2.getByRole("button",{name:"Add to Cart"}).click()
     // await page2.waitForTimeout(3000)
 
-    // await page.goto("https://demoapps.qspiders.com/ui/download?sublist=0")
-    // await page.getByPlaceholder("Enter text here").fill("sahil")
-    // await Promise.all([
-    // page.waitForEvent('download'),
-    // await page.locator('//button[@id="downloadButton"]').click()])
-    // await page.waitForTimeout(3000)
+// }
+// )
 
-}
-)
+
+// import { test } from "@playwright/test";
+
+// test.only("Task 4",async({browser})=>{
+//      const context=await browser.newContext();
+//     const page=await context.newPage();
+//     await page.goto("https://demoapps.qspiders.com/ui/download?sublist=0");
+//     await page.getByPlaceholder("Enter text here").fill("dhgdhsgxcdgxxkkhdkhdskh");
+//     await page.getByPlaceholder("Filename").fill("newFile.txt");
+//     const [page2]=await Promise.all([
+//         page.waitForEvent("download"),
+//         page.getByRole("button",{name:'Download'}).click()
+//     ])
+//     await page.pause();
+    
+    
+// })
