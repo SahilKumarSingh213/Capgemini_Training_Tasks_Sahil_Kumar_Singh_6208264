@@ -1,4 +1,3 @@
-
 //? //span[text()="Women"] --> only used for visible,full text
 
 //? //span[contains(text(),"Wom")] --> can be used for partial texts, also can be used for other attributes
@@ -31,4 +30,6 @@ test("click",async ({page})=>{
     await page.keyboard.press("Enter");
     await page.locator('//div[@id="p_n_g-1003517064111/36816607011"]/descendant::a[@aria-label="Apply Android 14 filter to narrow results"]/descendant::span[@class="a-size-base a-color-base"]').click();
     await page.screenshot({path:'screenshot/screenshot.png'})
-})
+    
+}
+)

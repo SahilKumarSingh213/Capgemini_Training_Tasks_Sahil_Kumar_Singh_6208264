@@ -1,0 +1,27 @@
+{
+	"id": "b915cfbc-3c6d-4310-890b-6d7b1dd7d302",
+	"values": [
+		{
+			"key": "BaseUrl",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "name",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"name": "My Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2026-04-02T10:40:09.234Z",
+	"_postman_exported_using": "Postman/12.4.4"
+}

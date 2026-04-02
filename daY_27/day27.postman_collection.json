@@ -1,0 +1,235 @@
+{
+  "info": {
+    "_postman_id": "22e58f0c-a6e4-40ea-89a0-e3fac89d0ebb",
+    "name": "day27",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53447858"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://petstore3.swagger.io/api/v3",
+          "protocol": "https",
+          "host": [
+            "petstore3",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "api",
+            "v3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":7,\r\n    \"name\":\"doggo\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseUrl}}/pet",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "pet"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.globals.set(\"id\", \"7\");\r",
+              "pm.globals.set(\"name\", \"cat\");\r",
+              "pm.test(\"Your test name\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.name).to.eql(\"cat\");\r",
+              "});\r",
+              "pm.test(\"Response time is less than 400ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(400);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"id\":{{id}},\r\n \"name\":\"{{name}}\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseUrl}}/pet/7",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "pet",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"city\": \"string\",\r\n  \"country\": \"string\",\r\n  \"email\": \"sahilsingle@gmail.com\",\r\n  \"firstName\": \"string\",\r\n  \"gender\": \"MALE\",\r\n  \"lastName\": \"string\",\r\n  \"password\": \"string\",\r\n  \"phone\": 9876543970,\r\n  \"state\": \"string\",\r\n  \"zoneId\": \"ALPHA\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base url}}/shoppers",
+          "host": [
+            "{{base url}}"
+          ],
+          "path": [
+            "shoppers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "// {\r\n//   \"email\": \"sahilsingle@gmail.com\",\r\n//   \"password\": \"string\",\r\n//   \"role\": \"SHOPPER\"\r\n// }\r\n\r\n{\r\n  \"email\": \"sahilsingle@gmail.com\",\r\n  \"password\": \"\",\r\n  \"role\": \"SHOPPER\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base url}}/users/login",
+          "host": [
+            "{{base url}}"
+          ],
+          "path": [
+            "users",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base url}/products",
+          "host": [
+            "{{base url}"
+          ],
+          "path": [
+            "products"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base url",
+      "value": ""
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "info": {
+    "_postman_id": "5800bce0-a090-4c85-a857-a6d4027c5002",
+    "name": "day26",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53447858"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://petstore3.swagger.io/api/v3/pet/1",
+          "protocol": "https",
+          "host": [
+            "petstore3",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "api",
+            "v3",
+            "pet",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":7,\r\n    \"name\":\"hi\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://petstore3.swagger.io/api/v3/pet",
+          "protocol": "https",
+          "host": [
+            "petstore3",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "api",
+            "v3",
+            "pet"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
